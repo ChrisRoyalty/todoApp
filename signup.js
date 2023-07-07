@@ -68,7 +68,7 @@ button.addEventListener("click", function (e) {
           localStorage.setItem("gender", gen.value);
         }
       }
-      window.location.replace("http://127.0.0.1:5500/main.html");
+      window.location.replace("main.html");
     }
   }
 });

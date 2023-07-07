@@ -107,7 +107,8 @@ body {
   padding: 15px 120px;
   outline: none;
   border: none;
-  background-color: whitesmoke;
+  background-color: transparent;
+  border: 1px solid white;
 }
 
 #button {
