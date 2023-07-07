@@ -34,10 +34,14 @@
           </div>
           <div>
             <label>Gender:</label><br />
-            <input type="radio" name="gender" id="male" value="male" />
-            <label>Male</label><br />
-            <input type="radio" name="gender" id="female" value="female" />
-            <label>Female</label>
+            <div class="radio-btn">
+              <input type="radio" name="gender" id="male" value="male" />
+              <label>Male</label>
+            </div>
+            <div class="radio-btn">
+              <input type="radio" name="gender" id="female" value="female" />
+              <label>Female</label>
+            </div>
             <small id="smallCheck" style="display: none; color: red"
               >Select a Gender</small
             >
@@ -50,7 +54,7 @@
             >
           </div>
           <button onclick="click" id="button">Sign up</button>
-          <p style="text-align: right">
+          <p style="text-align: right; padding: 15px">
             Already a User <a href="login.html">Login</a>
           </p>
         </form>
