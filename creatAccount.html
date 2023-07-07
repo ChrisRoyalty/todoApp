@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="creatAccount.css" />
+  </head>
+  <body>
+    <main>
+      <div class="formDiv">
+        <form>
+          <h3 style="text-align: center">CONFIRM ACCOUNT</h3>
+          <div>
+            <label>Email:</label><br />
+            <input class="input" type="email" id="email" />
+          </div>
+          <p style="color: red; display: none" id="error">
+            Email or password is not correct
+          </p>
+
+          <div>
+            <label>Password:</label><br />
+            <input class="input" type="password" id="password" />
+          </div>
+          <small id="smallPassword" style="display: none; color: red"
+            >Password must be up to 8 characters</small
+          >
+          <div>
+            <label>Confirm Password:</label><br />
+            <input class="input" type="password" id="confirmPassword" />
+          </div>
+          <button id="button" onclick="click">Confirm Account</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="creatAccount.js"></script>
+  </body>
+</html>

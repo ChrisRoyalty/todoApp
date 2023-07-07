@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <main>
+      <div class="formDiv">
+        <form>
+          <h3 style="text-align: center">SIGN IN</h3>
+          <div>
+            <label>Email:</label><br />
+            <input class="input" type="email" id="email" />
+          </div>
+          <p style="color: red; display: none" id="error">
+            Email or password is not correct
+          </p>
+
+          <div>
+            <label>Password:</label><br />
+            <input class="input" type="password" id="password" />
+          </div>
+          <p style="text-align: right">
+            <a href="creatAccount.html">forgotten password?</a>
+          </p>
+          <button id="button" onclick="click">Sign in</button>
+          <p style="text-align: right">
+            Don't have an account <a href="index.html">Signup</a>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <script src="login.js"></script>
+  </body>
+</html>
