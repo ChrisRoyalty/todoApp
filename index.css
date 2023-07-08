@@ -26,7 +26,7 @@ body {
 
 .sidebar {
   height: 100vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.459);
   color: white;
   width: 0px;
   position: absolute;
@@ -57,6 +57,7 @@ body {
 #cancel {
   border: none;
   background: transparent;
+  color: white;
   font-size: 35px;
   font-weight: 900;
   transition: 1s;
@@ -64,6 +65,7 @@ body {
 
 #menu:hover {
   transform: rotate(90deg);
+  color: rgba(255, 255, 255, 0.548);
 }
 
 .cancelDiv {
@@ -81,12 +83,18 @@ body {
 }
 
 .btnDiv button {
+  width: fit-content;
   height: 6vh;
-  background-color: black;
-  color: white;
+  padding: 0 15px;
+  background-color: white;
+  color: black;
   border: none;
   border-radius: 5px;
   margin: 0px 10px;
+  font-weight: bold;
+}
+.btnDiv button:hover {
+  background-color: rgba(255, 255, 255, 0.548);
 }
 
 #body {
@@ -109,14 +117,17 @@ body {
   border: none;
   background-color: transparent;
   border: 1px solid white;
+  border-right: none;
+  color: white;
 }
 
 #button {
   padding: 15px 40px;
-  border: none;
+  border: 1px solid black;
   margin-left: -4px;
   background-color: black;
   color: white;
+  font-weight: bold;
 }
 
 #todo {

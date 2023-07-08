@@ -8,17 +8,22 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: gray;
+  background: url(images/todo04.jpg);
+  background-size: cover;
 }
 
 .formDiv {
   display: flex;
+  background-color: rgba(0, 0, 0, 0.767);
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 80vh;
+  height: 85vh;
   width: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+  color: white;
+  padding: 0 25px;
 }
 
 form {
@@ -30,24 +35,63 @@ form {
 
 .input {
   background: none;
-  border: 2px solid white !important;
+  border: 1px solid rgba(255, 255, 255, 0.473);
   height: 25px;
   width: 35vw;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   outline: none;
-  padding-left: 20px;
+  padding: 10px 20px;
+  margin: 10px 0;
   color: white;
 }
 
 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 30px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.623);
   color: white;
   border: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transition: 0.5s;
+  padding: 20px 20px;
 }
 
 button:hover {
   opacity: 0.8;
+}
+.radio-btn {
+  margin: 12px 0;
+}
+
+a {
+  color: rgba(255, 255, 0, 0.822);
+}
+
+@media screen and (max-width: 450px) {
+  .formDiv {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.767);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 25px;
+  }
+  .input {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.473);
+    height: 25px;
+    width: 75vw;
+    /* border-radius: 10px; */
+    outline: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: white;
+  }
 }

@@ -50,7 +50,7 @@ button {
   align-items: center;
   justify-content: center;
   height: 30px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.623);
   color: white;
   border: none;
   /* border-radius: 10px; */
@@ -64,6 +64,11 @@ button:hover {
 .radio-btn {
   margin: 12px 0;
 }
+
+a {
+  color: rgba(255, 255, 0, 0.822);
+}
+
 @media screen and (max-width: 450px) {
   .formDiv {
     display: flex;

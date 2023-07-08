@@ -9,6 +9,7 @@ let menu = document.getElementById("menu");
 let sidebar = document.getElementById("sidebar");
 let cancel = document.getElementById("cancel");
 let modal = document.querySelector(".modal");
+let btnDiv = document.getElementById("btnDiv");
 
 function displayModal() {
   modal.style.display = "flex";
@@ -43,10 +44,12 @@ window.addEventListener("scroll", function () {
 
 function opened() {
   sidebar.style.width = "300px";
+  menu.style.color = "transparent";
 }
 
 function cancelled() {
   sidebar.style.width = "0px";
+  menu.style.color = "white";
 }
 
 let todoArr = [];
@@ -64,7 +67,7 @@ button.addEventListener("click", function (e) {
 
   if (input.value !== "") {
     todoArr.push(todoDiv);
-    input.style.border = "none";
+    input.style.border = "block";
     todoArr.map((item, index) => {
       todo.appendChild(item);
 
@@ -90,6 +93,9 @@ button.addEventListener("click", function (e) {
   } else {
     input.style.border = "1px solid red";
     alert("Input must have a value");
+    setTimeout(() => {
+      input.style.border = "1px solid white";
+    }, 3000);
   }
 
   input.value = "";
